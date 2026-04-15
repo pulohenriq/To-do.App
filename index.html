@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlowPro</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <div class="logo">FlowPro</div>
+        <nav>
+            <button data-view="kanban">Kanban</button>
+            <button data-view="matrix">Eisenhower</button>
+            <button data-view="pomodoro">Pomodoro</button>
+        </nav>
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Clareza. Foco. Execução.</p>
+            </div>
+            <div id="frog"></div>
+        </header>
+
+        <section class="task-form">
+            <input id="title" placeholder="Nova tarefa...">
+            <input type="date" id="date">
+            <input type="time" id="time">
+            <select id="priority">
+                <option value="high">Alta</option>
+                <option value="medium">Média</option>
+                <option value="low">Baixa</option>
+            </select>
+            <button id="add">Adicionar</button>
+        </section>
+
+        <section id="view"></section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
